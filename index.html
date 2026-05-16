@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flood Fill Demo</title>
+  <link rel="stylesheet" href="dist/style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <section class="panel">
+      <div class="panel-heading">
+        <span class="tag">Flood Fill</span>
+        <h1>Flood Fill Visualizer</h1>
+        <p class="subtitle">
+          Click any square to fill the connected region with a bright accent color.
+        </p>
+      </div>
+
+      <div class="board-card">
+        <div class="controls">
+          <div class="color-picker">
+            <div class="control-label">Pick a fill color</div>
+            <div class="color-row">
+              <button type="button" class="color-btn pink-btn selected" data-color="1" aria-label="Pink"></button>
+              <button type="button" class="color-btn lavender-btn" data-color="2" aria-label="Lavender"></button>
+              <button type="button" class="color-btn peach-btn" data-color="3" aria-label="Peach"></button>
+              <button type="button" class="color-btn mint-btn" data-color="4" aria-label="Mint"></button>
+            </div>
+          </div>
+          <button id="resetBtn" class="reset-btn">Reset Board</button>
+        </div>
+
+        <div id="grid" class="grid" aria-label="Flood fill grid"></div>
+      </div>
+
+      <p class="hint">Tap any square to update the connected area sharing the same color.</p>
+    </section>
+  </div>
+  <script src="dist/index.js"></script>
+</body>
+</html>
